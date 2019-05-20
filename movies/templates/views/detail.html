@@ -1,0 +1,18 @@
+{% extends "views/layout.html" %}
+
+{% block content %}
+<div class="row">
+    <ul class="list-group col-10 mt-4">
+        <li class="list-group-item"><strong>Movie id:</strong> {{movie.id}}</li>
+        <li class="list-group-item"><strong>Movie Title:</strong> {{movie.title}}</li>
+        <li class="list-group-item"><strong>Release date:</strong> {{movie.release_year}}</li>
+        <li class="list-group-item"><strong>Price: $</strong> {{movie.price}}</li>
+        <li class="list-group-item"><strong>Stock:</strong> {{movie.stock}}</li>
+        <li class="list-group-item"><strong>Movie Director:</strong> {{movie.director}}</li>
+    </ul>
+</div>
+
+    <button type="button" class="btn btn-success mt-4">Register New Purchase</button>
+    <button type="button" class="btn btn-danger mt-4">Delete Movie</button>
+
+{% endblock content %}
